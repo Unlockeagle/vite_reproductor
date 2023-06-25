@@ -15,6 +15,7 @@ export default {
 
       fontFamily: {
         mainFonts: ['Montserrat', 'sans-serif'],
+        mainExtrabold : ['Monserrat_Bold','sans-serif'],
       }
 
       

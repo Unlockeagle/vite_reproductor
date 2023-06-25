@@ -6,3 +6,8 @@
     font-family: 'mainFonts';
     src: url(/public/Montserrat-Regular.ttf);
   }
+
+  @font-face {
+    font-family: 'mainExtrabold';
+    src: url(/public/Montserrat-Black.ttf);
+  }
