@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'mainFonts';
+    src: url(/public/Montserrat-Regular.ttf);
+  }
