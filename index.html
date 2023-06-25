@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BistX</title>
   </head>
-  <body class="bg-green font-mainFonts">
+  <body class="bg-green font-mainFonts ">
 
-    <main class="grid gap-4 grid-cols-3">
+    <main class="grid gap-4 grid-cols-3 ">
 
       <!-- sidebar -->
 
-      <div class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[222px] overflow-y-auto text-white tex-center bg-darkGreen ">
+      <div class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[222px] overflow-y-auto shadow hover:shadow-inner text-white tex-center bg-darkGreen rounded-tr-[10px] ">
         
           <!-- Logo -->
           <div class="flex justify-start m-2">
@@ -39,7 +39,7 @@
 
           <!-- text de cancion -->
 
-          <div class="absolute bottom-[120px]">
+          <div class="absolute bottom-[120px] ">
             <ul class=" m-2  font-mainFonts text-[10px] p-0 text-black">
               <li class="p-2">Artist: </li>
               <li class="p-2">Song: </li>
@@ -79,7 +79,8 @@
 
 
       <!-- lista -->
-      <div class=" fixed top-0 bottom-0 lg:right-0 p-2 h-[732px] w-[529px] overflow-y-auto font-mainFonts text-white tex-center bg-darkGreen">
+      <div class=" fixed top-0 bottom-0 lg:right-0 p-2 h-[732px] w-[529px] overflow-y-auto font-mainFonts text-white tex-center bg-darkGreen 
+      rounded-[10px] ">
         <!-- nav -->
         <div class="">
           <ul class="flex justify-start m-10 gap-4 ">
@@ -89,6 +90,8 @@
 
 
           </ul>
+
+          <button>Search</button>
 
 
         </div>
@@ -126,6 +129,35 @@
           </ul>
       </div>
 
+      <div class="flow-root mx-10 border-b-[1px] border-black ">
+
+        <ul role="list" class="divide-y divide-white dark:divide-white">
+            <li class="py-3 sm:py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="flex-shrink-0">
+                        <img class="w-12 h-12 rounded-20" src="/public/unnamed.jpg" alt="Neil image">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-sm text-black truncate dark:text-black">
+                        Song:
+                      </p>
+                      <p class="text-sm font-medium text-black truncate dark:text-black">
+                            Artist: Taylor Swift
+                      </p>
+                      <p class="text-sm text-black truncate dark:text-black">
+                            Album: Desconocido
+                      </p>
+                    </div>
+                    
+                    <div class="grid-rows-2 items-center flex justify-between gap-2  p-2 ">
+                        <img src="/public/corazon_blanco.svg" alt="add Favorites">
+                        <img class="" src="/public/agregar (1).svg" alt="add playlist">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
 
       </div>
 
@@ -137,24 +169,43 @@
       
     </main>
     
-    <footer class="fixed mx-[222px] bottom-0 h-[100px] w-[1058px] overflow-y-auto text-white tex-center bg-darkGreen z-30">
+    <footer class="fixed mx-[222px] bottom-0 h-[100px] w-full overflow-y-auto text-white tex-center bg-darkGreen z-30 rounded-tl-[10px] 
+    shadow hover:shadow-inner">
       <!-- Botones -->
-      <div class="flex justify-center gap-10 items-center m-4">
-        <img class="w-12 h-12" src="/public/unnamed.jpg" alt="">
+      <div class="flex justify-between gap-10 items-center m-4 ">
+        
+        <!-- informacion de la reproduccion -->
+        <div class="flex justify-start min-w-0 gap-6">
+          
+          <img class=" m-1 w-12 h-12" src="/public/unnamed.jpg" alt="">
+        
+          <div>
 
-        <div class="flex-1 min-w-0">
-          <p class="text-sm text-black truncate dark:text-black">
-            Song:
-          </p>
-          <p class="text-sm font-medium text-black truncate dark:text-black">
-                Artist: Taylor Swift
-          </p>
-          <p class="text-sm text-black truncate dark:text-black">
-                Album: Desconocido
-          </p>            
+            <p class="text-sm text-black truncate dark:text-black">
+              Song:
+            </p>
+            <p class="text-sm font-medium text-black truncate dark:text-black">
+                  Artist: Taylor Swift
+            </p>
+            <p class="text-sm text-black truncate dark:text-black">
+                  Album: Desconocido
+            </p>           
+          </div> 
+   
+
+          <div class="flex justify-around gap-6 align-bottom ml-10">
+            <img class="" src="/public/flechas-repetir.svg" alt="Repetir cancion">
+            <img src="/public/angulo-doble-pequeno-izquierdo.svg" alt="Atrasar">
+            <img class="w-[50px] h-[50px]" src="/public/boton-de-play.png" alt="Boton de Play">
+            <img src="/public/angulo-doble-pequeno-derecho.svg" alt="Adelantar">
+            <img src="/public/lista-de-musica.svg" alt="Mostrar Playlist">
 
 
-      </div>
+          </div>
+
+          
+
+        </div>
 
 
     </footer>
