@@ -22,31 +22,35 @@
           </div>
           
           <div class="relative">
-            <ul class="absolute m-2 top-8  font-mainFonts text-[20px] p-2 text-black">
-              <li class="p-2">Search</li>
+            <ul class="absolute grid grid-col justify-items-start m-2 top-8  font-mainFonts text-[20px] p-2 text-black gap-4">
+              <button class="flex justify-start gap-2"><img class="p-1" src="/public/busqueda - negro.svg" alt="Lupa">Search</button>
+              <button class="flex justify-start gap-2"><img class="mt-0.5 w-[25px] h-[25px] p-0.8 " src="/public/corazon_blanco.svg" alt="Favorites">Favorites</button>
+              <button class="flex justify-start gap-2"><img class="p-1" src="/public/lista-de-musica.svg" alt="Playlist">Playlist</button>
+
+              <!-- <li class="p-2">Search</li>
               <li class="p-2">Favorites</li>
-              <li class="p-2">Playlist</li>
+              <li class="p-2">Playlist</li> -->
             </ul>
 
           </div>
 
           <!-- tarjeta -->
 
-          <div class="relative items-center">
-            <img class="absolute  m-6 top-80 w-[150px] h-[150px] rounded-[20px]" src="/public/unnamed.jpg" alt="">
+          <div class="relative items-center gap-1">
+            <img class="absolute m-6 top-[300px] w-[150px] max-w-screen-xl h-[150px] rounded-[20px] " src="/public/unnamed.jpg" alt="">
             
+            <div class="relative top-[510px] bg-black ">
+              <ul class=" absolute m-2  font-mainFonts text-[10px] p-0 text-black ">
+                <li class="p-2">Artist: </li>
+                <li class="p-2">Song: </li>
+                <li class="p-2">Album: </li>
+              </ul>
+  
+            </div>
           </div>
 
           <!-- text de cancion -->
 
-          <div class="absolute bottom-[120px] ">
-            <ul class=" m-2  font-mainFonts text-[10px] p-0 text-black">
-              <li class="p-2">Artist: </li>
-              <li class="p-2">Song: </li>
-              <li class="p-2">Album: </li>
-            </ul>
-
-          </div>
 
           <!-- control de volumen -->
           <div class="absolute m-2 bottom-[20px]" >
@@ -64,9 +68,9 @@
       </div>
 
       <!-- main -->
-      <div class="relative z-20">
+      <div class="relative z-20 ">
       
-        <img class="absolute left-80 top-20 p-4 scale-150 md:w-auto  " src="/public/taylor.png " alt="">
+        <img class="absolute left-80 top-20 p-4 scale-150 max-w-screen-m  " src="/public/taylor.png " alt="">
         <p class="absolute left-60 top-[550px] text-6xl  font-mainFonts shadow-xl text-white truncate">Taylor Swift</p>
 
 
@@ -79,21 +83,28 @@
 
 
       <!-- lista -->
-      <div class=" fixed top-0 bottom-0 lg:right-0 p-2 h-[732px] w-[529px] overflow-y-auto font-mainFonts text-white tex-center bg-darkGreen 
+      <div class=" fixed top-0 bottom-0 lg:right-0 p-2 h-full w-[529px] overflow-y-auto font-mainFonts text-white tex-center bg-darkGreen 
       rounded-[10px] ">
         <!-- nav -->
-        <div class="">
-          <ul class="flex justify-start m-10 gap-4 ">
+        <div class="flex justify-between truncate">
+          <ul class="flex justify-start m-10 gap-4 truncate">
             <li>Songs</li>
             <li>Artits</li>
             <li>Albums</li>
 
-
-          </ul>
-
-          <button>Search</button>
-
-
+            
+          </ul>          
+          
+          
+          <!-- boton de busqueda -->
+          <button class="flex justify-between mt-6 mr-5 bg-green p-2 w-[220px] h-[40px] text-left rounded border-spacing-1"> 
+            Search <img class="" src="/public/busqueda.svg" alt="Lupa">   </button>
+          
+          
+            
+            
+          
+          
         </div>
         
         
